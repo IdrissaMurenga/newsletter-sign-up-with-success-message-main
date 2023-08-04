@@ -1,0 +1,108 @@
+@import"./reset.css";
+@import"./utilities.css";
+.img{
+    width: 390px;
+}
+
+.details{
+    padding: 1.5rem;
+}
+.padding-btm{
+    padding-bottom: 1rem;
+}
+h1{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+ul{
+    padding-bottom: 2rem;
+}
+li{
+    padding-block: 1rem;
+    gap: 1rem;
+}
+.details_p, li{
+    font-size: 16px;
+}
+form{
+    display: grid;
+}
+label{
+    font-weight: 800;
+}
+input{
+    width: 21.3rem;
+    margin-top: 1rem;
+    padding:1rem 0.7rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+}
+.subscribe_btn{
+    text-align: center;
+    padding: 1.3rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: aliceblue;
+}
+
+.inner-container{
+    padding: 3rem 1rem 1rem 1rem;
+    & > *{
+        padding-bottom: 1rem;
+    }
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3{
+    color: red;
+}
+.message_p{
+    line-height: 1.5;
+    font-weight: 500;
+    & >.span{
+        font-weight: 800;
+    }
+}
+.btn{
+    display: grid;
+}
+.dismiss_btn{
+    margin-top: 15.5rem;
+}
+@media(width > 700px){
+    body{
+        background-color: hsl(235, 18%, 26%);
+    }
+    .container{
+        max-width: 48rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-inline: auto;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        border-radius: 15px;
+        background-color: aliceblue;
+    }
+    input{
+        width: 23.5rem;
+    }
+    .inner-container{
+        width: 26rem;
+        margin-top:3rem;
+        margin-inline: auto;
+        padding: 1.5rem 1rem 1rem 1rem;
+        border-radius: 15px;
+        background-color: aliceblue;
+    }
+    .dismiss_btn{
+        margin-top: 1rem;
+    }
+    .success_img{
+        width: 4rem;
+        margin-bottom: 1rem;
+    }
+}

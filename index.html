@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <!-- Sign-up form start -->
+      <div class="img">
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(width>700px)">
+          <img class="img" src="./assets/images/illustration-sign-up-mobile.svg" alt="mobile">
+        </picture>
+      </div>
+      <div class="details">
+        <h1 class="padding-btm">Stay updated!</h1>
+        <p class="padding-btm details_p">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="flex">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            Product discovery and building what matters
+          </li>
+          <li class="flex">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            Measuring to ensure updates are a success
+          </li>
+          <li class="flex">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            And much more!
+          </li>
+        </ul>
+        <form>
+          <div class="flex justify">
+            <label>Email address</label>
+            <h3 id="validMessage" class="display"> Valid email required</h3>
+          </div>
+          <div>
+            
+            <input class="input" type="text" id="emailInput" placeholder="email@company.com" value="">
+          </div>
+          <button class="subscribe_btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <div class="inner-container display"> 
+      <img src="./assets/images/icon-success.svg" alt="" class="success_img">
+      <h2>Thanks for subscribing!</h2>
+      <p class="message_p"> 
+        A confirmation email has been sent to <span class="span">ash@loremcompany.com.</span> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <div class="btn">
+        <button class="dismiss_btn subscribe_btn">Dismiss message</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
