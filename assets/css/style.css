@@ -1,9 +1,9 @@
-@import"./reset.css";
 @import"./utilities.css";
+@import"./reset.css";
+
 .img{
     width: 390px;
 }
-
 .details{
     padding: 1.5rem;
 }
@@ -36,6 +36,9 @@ input{
     padding:1rem 0.7rem;
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 5px;
+}
+input:focus{
+    outline: none;
 }
 .subscribe_btn{
     text-align: center;
